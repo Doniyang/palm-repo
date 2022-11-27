@@ -1,0 +1,23 @@
+mybatis:
+  configuration:
+    call-setters-on-nulls: true
+    jdbc-type-for-null: null
+    
+spring:
+  datasource:
+    druid:
+      driver-class-name: oracle.jdbc.driver.OracleDriver
+      url: jdbc:oracle:thin:@localhost:1521:palm
+      username: sys
+      password: Eich3344056
+      initialSize: 3
+      minIdle: 3
+      maxActive: 30
+      maxWait: 1500
+      stat-view-servlet:
+        enabled: true 
+        login-username: admin
+        login-password: 123456
+        deny: 
+        allow:   
+        url-pattern: /druid/*
